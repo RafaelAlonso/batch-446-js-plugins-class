@@ -3,13 +3,37 @@
   <head>
     <meta charset="UTF-8">
     <title>Playground - JavaScript 101</title>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   </head>
   <body>
-    <p style="margin-top: 40vh; text-align: center; font: normal 24px monospace;">
-      Open the console 🤓
-    </p>
 
     <!-- Add some HTML in here -->
+
+    <div class="container">
+      <h1>AJAX POST (Algolia)</h1>
+      <input type="text" id='search'>
+
+      <h2 id='address'></h2>
+
+
+    </div>
+
+
+    <div class="container mt-5">
+
+      <h1>AJAX GET (omdb)</h1>
+
+      <form class="form-inline my-5" id='search-movies'>
+        <input type="text" id="keyword" class="form-control mb-2 mr-sm-2" placeholder='Enter the Movie Name' name='keyword'>
+        <input type="submit" class="btn btn-primary mb-2">
+      </form>
+
+
+      <ul id="results" class="list-inline">
+      </ul>
+    </div>
+
 
     <script src="main.js"></script>
   </body>
