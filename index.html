@@ -5,22 +5,27 @@
     <title>Playground - JavaScript 101</title>
     <link rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
+
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
     <!-- Add some HTML in here -->
+    <div class="container mt-5 text-center">
 
-    <div class="container">
-      <h1>AJAX POST (Algolia)</h1>
-      <input type="text" id='search'>
+      <select class="select2" name="country">
+        <option value="AL">Alabama</option>
+        <option value="WY">Wyoming</option>
+        <option value="">São Paulo</option>
+        <option value="">Rio de Janeiro</option>
+        <option value="">São Pedro</option>
+        <option value="">São Roque</option>
+        <option value="">Belo Horizonte</option>
+      </select>
 
-      <h2 id='address'></h2>
-
-
-    </div>
-
-
-    <div class="container mt-5">
+      <textarea class="form-control" id="editor" rows="4"></textarea>
+      <div id="preview"></div>
 
       <h1>AJAX GET (omdb)</h1>
 
